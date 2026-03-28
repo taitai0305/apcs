@@ -1,0 +1,7 @@
+a=input()
+b=input()
+c=input()
+if c=="yes":
+    print("{}想和{}絕交".format(a,b))
+else:
+    print("{}不想和{}絕交".format(a,b))
