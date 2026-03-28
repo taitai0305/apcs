@@ -1,0 +1,10 @@
+s=''
+n=int(input())
+
+for i in range(n):
+    h1,m1,h2,m2,m3=map(int,input().split())
+    if (h2*60+m2)-(h1*60+m1+m3) >=0:
+        s=s+'Yes\n'
+    else:
+        s=s+'No\n'
+print(s)
