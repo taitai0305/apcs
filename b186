@@ -1,0 +1,12 @@
+while True:
+    try:
+        a,b,c=map(int,input().split())
+        k=a//10
+        m=c//2
+        if m<k:
+            b+=m
+        else:
+            b+=k
+        print("{} 個餅乾，{} 盒巧克力，{} 個蛋糕。".format(a,b,c))
+    except:
+        break
