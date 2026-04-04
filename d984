@@ -1,0 +1,17 @@
+while 1:
+    try:
+        a=list(map(int,input().split()))
+        b=sorted(a, reverse=True)
+        if b[0]>b[1]+b[2]:
+            i=a.index(b[0])
+        else:
+            i=a.index(b[1])
+         
+        if i==0:
+            print("A")
+        elif i==1:
+            print("B")
+        else:
+            print("C")
+    except:
+        break
