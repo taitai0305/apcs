@@ -1,0 +1,3 @@
+b=eval
+a=b(input())
+print(int(a))
