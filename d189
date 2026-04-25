@@ -1,0 +1,15 @@
+while 1:
+    try:
+        n=int(input())
+        total=n
+        empty=n
+        while empty>=3:
+          t=empty//3  
+          total+=t 
+          empty=empty%3+t
+        if empty==2:
+            total+=1
+        print(total)
+          
+    except:
+        break
