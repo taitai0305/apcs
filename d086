@@ -1,0 +1,12 @@
+while True:
+    a=input()
+    if a=="0":
+        break
+    a=a.upper()
+    if a.isalpha()==False:
+        print("Fail")
+        continue
+    v=0
+    for k in a:
+        v=v+ord(k)-ord("A")+1
+    print(v)
