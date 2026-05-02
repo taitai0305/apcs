@@ -1,0 +1,18 @@
+h,m,s=map(int,input().split())
+m+=s//60
+s=s%60
+h=h+m//60
+m=m%60
+h=h%24
+if h>=10:
+    print("{}:".format(h),end="")
+else:
+    print("0{}:".format(h),end="")
+if m>=10:
+    print("{}:".format(m),end="")
+else:
+    print("0{}:".format(m),end="")
+if s>=10:
+    print("{}".format(s),end="")
+else:
+    print("0{}".format(s),end="")
