@@ -1,0 +1,15 @@
+#把十進位的數除2 得到於數 是二進位數 先把它存在串列
+#把商數設為該數 重複上個動作 直到商為0
+while True:
+    try:
+        n=int(input())
+        a=[]
+        while n!= 0:
+            a.append(n%2)
+            n=n//2
+        a.reverse()
+        for k in a:
+            print(k,end="")
+        print()
+    except:
+        break
