@@ -1,0 +1,19 @@
+n=int(input())
+a=2
+while n!=1:
+    ac=0
+    while n%a==0:
+        n=n/a
+        ac+=1
+    if ac>=1:
+        if n==1:
+            if ac>1:
+                print("{}^{}".format(a,ac))
+            else:
+                print(a)
+        else:
+            if ac>1:
+                print("{}^{} * ".format(a,ac),end="")
+            else:
+                print("{} * ".format(a),end="")
+    a+=1
