@@ -1,0 +1,23 @@
+while True:
+    try:
+        a,b,c,d=map(int,input().split()) #a:1 b:2 c:3 d:4 cm產品
+        box=0
+        box=d
+        box=box+c
+        empty_space= (64-27)*c
+        box=box+b//8
+        if b%8!=0:
+            box=box+1
+            empty_space+=(4*4*4)-(b%8)*(2*2*2)
+        if empty_space>=a:
+            print(box)
+        else:
+            a-=empty_space
+            if a%64==0:
+                box+=a//64
+            else:
+                box+=a//64+1
+            print(box)
+            
+    except:
+        break
