@@ -1,0 +1,11 @@
+n=int(input())
+a=list(map(int,input().split()))
+for i in range(n):
+    if a[i]%3==0 and a[i]%2==0:
+        print(1,end=" ")
+    elif a[i]%2==1 and a[i]%3!=0:
+        print(2,end=" ")
+    elif int(a[i]**0.5)* int(a[i]**0.5)==a[i] or (a[i]%2 ==0 and a[i]%7!=0):
+        print(3,end=" ")
+    else:
+        print(0,end=" ")
