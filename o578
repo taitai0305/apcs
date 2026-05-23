@@ -1,0 +1,5 @@
+l,w,h,k=map(int,input().split())
+ans=0
+if l%k==0 and w%k==0 and h%k==0:
+    ans=l//k * w//k* h//k
+print(ans)
