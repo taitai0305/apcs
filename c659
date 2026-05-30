@@ -1,0 +1,6 @@
+a=list(input().split())
+b=a[0]
+c=a[1:]
+for i in range(len(c)-1):
+    print("{} {} ".format(c[i],b),end='')
+print(c[-1])
