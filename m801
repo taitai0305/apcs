@@ -1,0 +1,19 @@
+c="AHIMOTUVWXY"
+a =input()
+#字串沒有倒過來的函數 串列才有
+#回文就是從左往右看(正向串列)跟從右往左看(倒過來的串列)依樣
+a=list(a)
+b=a.copy()
+b.reverse()
+ok=True
+if a==b:
+    for k in a:
+        if k not in c:
+            print("No")
+            ok=False
+            break
+    if ok:
+        print("Yes")
+else:
+    print("No")
+
