@@ -1,0 +1,20 @@
+f=[0,1]
+for i in range (2,30001):
+    x=i+f[i-1]
+    f.append(x)
+"""
+def g (n):
+    if n ==1:
+        return 1
+    return f(n)+g(n-1)
+"""
+g=[0,1]
+for i in range (2,30001):
+    x=f[i]+g[i-1]
+    g.append(x)
+while 1:
+    try:
+       n=int(input())
+       print(f[n],g[n])
+    except:
+        break
