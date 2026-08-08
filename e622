@@ -1,0 +1,15 @@
+n,s =map (int,input().split())
+maxi=1
+maxcp=0
+for i in range(n):
+    cp,iv=map(int,input().split())
+    if iv >=40:
+        cp+=s//1000*100
+    elif iv>=30:
+        cp+=s//1000*50
+    else:
+        cp+=s//1000*10
+    if cp>maxcp:
+        maxcp=cp
+        maxi=i+1
+print(maxi,maxcp)
