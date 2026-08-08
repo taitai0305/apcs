@@ -1,0 +1,13 @@
+n=int (input())
+for _ in range(n):
+    a,b,c=map(int,input().split())
+    nop=True
+    for i in range(a+1,b):
+          if i%c!=0:
+              nop =False
+              print(i,end=" ")
+    if nop :
+        print("No free parking spaces.")        
+    else:
+        print()
+    
