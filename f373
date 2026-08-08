@@ -1,0 +1,9 @@
+n=int(input())
+a=n
+a=a-200*(n//2000)
+b=n
+b=b-100*(n//1000)
+if b<a:
+    print(b,1)
+else:
+    print(a,0)
