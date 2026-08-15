@@ -1,0 +1,23 @@
+n,p=map(str,input().split())
+n=int(n)
+p=list(p)
+p.reverse()
+it=0#序號的計數器
+g=1#組別  
+max_a=-100#最高戰力值
+max_g=0#最高戰力組別
+all_g=0#分組之戰力總值
+while it <len(p):
+    all_g +=int(p[it])
+    it+=1
+    if it% n==0:
+        if all_g>=max_a:
+            max_a=all_g
+            max_g=g
+        all_g=0
+        g+=1
+if all_g>=max_a:
+    max_a=all_g
+    max_g=g
+print(max_g,max_a)
+
