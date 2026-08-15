@@ -1,0 +1,23 @@
+a=input().split()
+i=0
+b=[]
+while(a[i]!='0'):
+    b.append(int(a[i]))
+    i+=1 
+c=[]
+d=[]
+for n in b:
+    if n%7==0:
+        c.append(n)
+    else:
+        d.append(n)
+max=0
+for n in c:
+    if n%70 >max%70:
+        max=n
+if max==0:
+    max=76
+    for n in d:
+        if n%77<max%77:
+            max=n
+print(max)
