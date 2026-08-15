@@ -1,0 +1,22 @@
+s,e,a=map(int,input().split())
+day=0
+workday=0
+while True:
+    if workday==9:
+        day+=1
+        workday=0        
+        a-=1
+    else:
+        workday+=1 
+        if day%3==0 and day!=0:
+            s+=s//3
+        else:
+            if day>0:
+                s+=s//10
+    day+=1
+    if s>=e:
+        print(day)
+        break
+    if a<=0:
+        print("unsalable")
+        break
