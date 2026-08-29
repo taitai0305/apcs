@@ -1,0 +1,13 @@
+n,m,d=map(int,input().split())
+ok=False
+for i in range(d+1):
+    for j in range(d+1):
+        if i*n+j*m == d:
+            ok=True
+            break
+    if ok:
+        break
+if ok:
+    print("YES")
+else:
+    print("NO")
