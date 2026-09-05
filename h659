@@ -1,0 +1,19 @@
+k,w,s,e=map(int,input().split())
+total=0
+if k <=2:
+    total=20
+else:
+    total = 20+ 5*(k-2)
+total+=w//2*5
+for i in range(s+1,e+1):
+    if i >22:
+        total+=225
+    elif i>21:
+        total+=215
+    elif i>20:
+        total+=205
+    elif i>19:
+        total+=195
+    elif i>18:
+        total+=185
+print(total)
