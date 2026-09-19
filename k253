@@ -1,0 +1,18 @@
+t,s,p=map(int,input().split())
+t80=t*0.8
+t60=t*0.6
+t40=t*0.4
+t20=t*0.2
+total=0
+while t >= t20 and s>0:
+    if t >=t80:
+        total+=int(p*0.5)
+    elif t >=t60:
+        total+=int(p*0.6)
+    elif t >=t40:
+        total+=int(p*0.8)
+    elif t >=t20:
+        total+=int(p*0.9)
+    t-=1
+    s-=1
+print(total)   
