@@ -1,0 +1,19 @@
+def haveb(i,b):
+    s=str(i)#把正數i換成字串s
+    for a in s:
+        if int(a)==b:
+            return True
+    return False
+    
+            
+            
+s,e,b,k=map(int,input().split())
+p=0 #拍手次數
+for i in range(s,e+1):
+    if i%b==0 or haveb(i,b):
+        p+=1
+        if p==k:
+            print(i)
+            break
+if p !=k:
+    print(-1)
