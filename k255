@@ -1,0 +1,16 @@
+n,w =map(int,input().split())
+total=0#每天累積的水量
+no_water=False
+for i in range(1,n+1):
+    a=list(map(int,input().split()))
+    total+= w
+    for j in range(1,a[0]+1):
+        total-=a[j]
+        if total <0:
+            print(i)
+            no_water=True
+            break
+    if no_water:
+        break
+if no_water==False:
+    print(-1)
