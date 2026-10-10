@@ -1,0 +1,17 @@
+while True:
+    a=list(map(int,input().split()))
+    if a[0]==-1:
+        break
+    n=a[0]#倉數
+    e=a[1]#容量
+    f=n*e#食物量
+    day=0#幾天
+    teat=0
+    while f>0:
+        day+=1
+        f-=n
+        teat+=n
+        x=teat//e
+        n-=x
+        teat=teat%e
+    print(day)
