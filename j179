@@ -1,0 +1,33 @@
+n=input()
+while len(n)>1:
+    if len(n)==4:
+        x = n[0:2]
+        y=n[2:4]
+        a=int(x[0])*int(x[1])
+        if y[0]=='0':
+            b=int(y[1])
+        else:
+            b=int(y[0])*int(y[1])
+        if a==0:
+            if b==0:
+                n="0"
+            else:
+                n=str(b)
+        else:
+            n=str(a)+str(b)
+        
+    elif len(n)==3:
+        a=int(n[0])*int(n[1])
+        b=int(n[1])*int(n[2])
+        if a==0:
+            if b==0:
+                n="0"
+            else:
+                n=str(b)
+        else:
+            n=str(a)+str(b)
+            
+    elif len(n)==2:
+        a=int(n[0])*int(n[1])
+        n=str(a)
+print(n)
