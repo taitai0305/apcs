@@ -1,0 +1,18 @@
+n=int(input())
+a=list(map(int,input().split()))
+m=[]#收集的名單
+k=[]#出現的名單出現幾次
+for i in range(n):
+    if a[i] in m:
+        ii =m.index(a[i])
+        k[ii]+=1
+    else:
+        m.append(a[i])
+        k.append(1)
+maxm=0
+maxk=0
+for i in range (len(k)):
+    if k[i]>maxk:
+        maxk=k[i]
+        maxm=m[i]
+print(maxm,maxk)
