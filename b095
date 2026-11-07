@@ -1,0 +1,7 @@
+n,r=map(int,input().split())
+s=1
+b=n
+for i in range(r):
+    s=s*b
+    b=b-1
+print(s)
