@@ -1,0 +1,6 @@
+h,m=map(int,input().split())
+m=h*60+m
+if m>=860 and m<=1000:
+    print("YES")
+else:
+    print("NO")
